@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"hub08\startup_stm32f407xx.o"
+"hub08\main.o"
+"hub08\gpio.o"
+"hub08\stm32f4xx_it.o"
+"hub08\stm32f4xx_hal_msp.o"
+"hub08\stm32f4xx_hal_tim.o"
+"hub08\stm32f4xx_hal_tim_ex.o"
+"hub08\stm32f4xx_hal_rcc.o"
+"hub08\stm32f4xx_hal_rcc_ex.o"
+"hub08\stm32f4xx_hal_flash.o"
+"hub08\stm32f4xx_hal_flash_ex.o"
+"hub08\stm32f4xx_hal_flash_ramfunc.o"
+"hub08\stm32f4xx_hal_gpio.o"
+"hub08\stm32f4xx_hal_dma_ex.o"
+"hub08\stm32f4xx_hal_dma.o"
+"hub08\stm32f4xx_hal_pwr.o"
+"hub08\stm32f4xx_hal_pwr_ex.o"
+"hub08\stm32f4xx_hal_cortex.o"
+"hub08\stm32f4xx_hal.o"
+"hub08\stm32f4xx_hal_exti.o"
+"hub08\system_stm32f4xx.o"
+"hub08\hub08_1.o"
+--strict --scatter "HUB08\HUB08.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HUB08.map" -o HUB08\HUB08.axf
